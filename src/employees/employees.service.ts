@@ -7,7 +7,9 @@ export class EmployeesService {
   constructor(private readonly databaseService: DatabaseService) {}
 
   async create(createEmployeeDto: Prisma.EmployeeCreateInput) {
-    return await this.databaseService.employee.create({ data: createEmployeeDto });
+    return await this.databaseService.employee.create({
+      data: createEmployeeDto,
+    });
   }
 
   async findAll(role?: 'INTERN' | 'ENGINEER' | 'ADMIN') {
