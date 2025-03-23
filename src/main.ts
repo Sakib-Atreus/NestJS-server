@@ -4,7 +4,6 @@ import { AllExceptionsFilter } from './all-exceptions.filter';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  
   // , {
   //   bufferLogs: true,
   // });
