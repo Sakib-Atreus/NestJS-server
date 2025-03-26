@@ -4,7 +4,7 @@ import { AllExceptionsFilter } from './all-exceptions.filter';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  // , {
+  //  , {
   //   bufferLogs: true,
   // });
   // app.useLogger(app.get(MyLoggerService))
